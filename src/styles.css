@@ -1,0 +1,82 @@
+#product {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 20px;
+
+  padding: 5px;
+}
+
+.pro {
+  width: calc(33% - 50px);
+  border: 1px solid lightgrey;
+  margin: 10px 15px;
+  padding: 8px;
+  text-align: center;
+  border-radius: 8px;
+}
+.img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.go {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+.ho {
+  margin-left: 20px;
+}
+.btn {
+  background-color: green;
+  color: whitesmoke;
+  padding: 5px;
+  border-radius: 6px;
+  width: 90px;
+  border: none;
+  margin-top: 15px;
+}
+#ele {
+  display: flex;
+  justify-content: space-around;
+  margin: -15px 110px;
+}
+#skills {
+  justify-content: space-around;
+}
+.skill-set {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.skill-set > p {
+  background-color: lightgrey;
+  padding: 5px;
+  border-radius: 15px;
+  margin: 3px;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.circular-div {
+  position: absolute;
+  top: 6px; /* Adjust this value to position the div as needed */
+  left: 6px; /* Adjust this value to position the div as needed */
+  width: 12px;
+  height: 12px;
+  background-color: gray;
+
+  border-radius: 50%; /* Makes the div circular */
+  z-index: 1; /* Ensure it's above the image */
+}
+
+.image {
+  display: block; /* Ensures the image behaves like a block element */
+  width: 100%; /* Adjust size as needed */
+  height: auto; /* Ensures aspect ratio is maintained */
+  z-index: 0; /* Keep the image behind the circular div */
+}
